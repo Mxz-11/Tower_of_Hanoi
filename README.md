@@ -2,6 +2,12 @@
 
 This project implements an automaton-based solver for the **Towers of Hanoi** puzzle with 3 disks and 3 pegs. It uses **Flex** for lexical analysis and **Bison** for syntax parsing to process a custom-defined input format representing state transitions.
 
+<h1 align="center">
+  <img src="https://media.tenor.com/GfSX-u7VGM4AAAAC/dancing-bird.gif" alt="Dancing Bird" width="250">
+</h1>
+
+---
+
 ## 📦 Project Files
 
 | File | Description |
@@ -60,3 +66,28 @@ Where input.txt contains your transition rules.
 ### 📁 Automaton Visualization
 
 The optional file estados.pdf can be used to visualize the finite automaton representing all possible states and transitions of the Hanoi system.
+
+---
+
+## 📖 Flex & Bison Basics
+
+### 📘 What is Flex?
+
+**Flex** is a tool for generating **scanners**: programs that perform lexical analysis. It takes a `.l` file as input and produces a C file (`lex.yy.c`) containing a function `yylex()` that matches patterns (tokens) from the input stream.
+
+- You define **regex-based patterns** and associate them with **actions** in C.
+- Ideal for tokenizing inputs before parsing them with a tool like Bison.
+
+### 📙 What is Bison?
+
+**Bison** is a **parser generator** compatible with Yacc. It reads a `.y` file defining a context-free grammar and produces a parser in C (`y.tab.c`) which calls `yylex()` (from Flex) to get tokens.
+
+- It uses **LALR(1)** parsing.
+- You define grammar rules and the associated **semantic actions** in C.
+- The generated parser calls functions like `yyparse()` and uses `yylval` to handle data.
+
+### 🔗 Resources
+
+- [Flex Manual](https://westes.github.io/flex/manual/)
+- [Bison Manual](https://www.gnu.org/software/bison/manual/)
+
