@@ -2,9 +2,9 @@
 
 This project implements an automaton-based solver for the **Towers of Hanoi** puzzle with 3 disks and 3 pegs. It uses **Flex** for lexical analysis and **Bison** for syntax parsing to process a custom-defined input format representing state transitions.
 
-<h1 align="center">
-  <a href="https://tenor.com/view/parrot-parakeet-wiggle-dancing-cute-gif-17132057" target="_blank">🕺 Click to see the Dancing Parrot</a>
-</h1>
+<p align="center">
+  <img src="https://media.tenor.com/GfSX-u7VGM4AAAAC/dancing-bird.gif" alt="Dancing Bird" width="250">
+</p>
 
 ---
 
