@@ -23,6 +23,7 @@ This project implements an automaton-based solver for the **Towers of Hanoi** pu
 Example of a transition (where disk movement goes from one peg to another):
 
 123 -> 213 : M
+
 Each line represents a transition from one state to another, labeled by a move name or symbol.
 
 ## ⚙️ How to Compile and Run
